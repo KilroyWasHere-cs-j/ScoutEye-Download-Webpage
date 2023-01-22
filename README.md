@@ -16,7 +16,7 @@ Each change should get it's own issue and branch
 
 page/#(issue number)-(name of change)
 
-*Example*
+*Example:*
 
 Adds a install button the issue for this change is number 1
 
