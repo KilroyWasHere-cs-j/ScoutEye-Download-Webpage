@@ -3,10 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <title>ScoutEye</title>
+    .downloadButton{
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+    }
+    <style>
+        .introDiv{
+            border: 5px outset red;
+            border-radius: 20px;
+            background-color: lightyellow;
+            text-align: center;
+        }
+    </style>
+    <style>
+        .scoutEyeDownloadLink{
+            border: 5px outset red;
+            border-radius: 20px;
+            width: 360px;
+            height: 350px;
+            background-color: lightyellow;
+            text-align: center;
+        }
+        .andButton{
+            background-color: white;
+
+            color: black;
+            border: 20px solid #4CAF50;
+        }
+        .andButton:hover{
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+    <style>
+        .scoutEyeDownloadLinkAndroid{
+            border: 5px outset red;
+            border-radius: 20px;
+            width: 360px;
+            height: 350px;
+            background-color: lightyellow;
+            text-align: center;
+        }
+        .andButton{
+            background-color: white;
+            color: black;
+            border: 2px solid #4CAF50;
+        }
+        .andButton:hover{
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+
+    <style>
+        .documentationDiv{
+            border: 5px outset red;
+            border-radius: 20px;
+            width: 735px;
+            height: 350px;
+            background-color: lightyellow;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <h1>ScoutEye Downloads and Documentation</h1>
-    <p style="text-align:center;">Downloads</p><
-    <p>What is ScoutEye</p>
+
+<div class="introDiv">
+    <h2>ScoutEye Downloads and Documentation</h2>
+</div>
+
+<div class="scoutEyeDownloadLink" style="float: left;" onclick="DesktopDownloadClicked()">
+    <h2>ScoutEye Desktop Download</h2>
+    <button class="downloadButton andButton">Download</button>
+</div>
+
+<div class="scoutEyeDownloadLinkAndroid" style="margin-left: 50%;" onclick="AndroidDownloadClicked()">
+    <h2>ScoutEye Android Download</h2>
+    <button class="downloadButton andButton">Download</button>
+</div>
+
+<div class="documentationDiv">
+    <h2>Documentation</h2>
+</div>
+
+<script>
+    function DesktopDownloadClicked() {
+        const responce = confirm("Are you sure you want to download ScoutEye Suite Desktop at this time?")
+        if(responce){
+            window.location.replace("https://github.com/frc5687/ScoutEye/archive/refs/tags/v.1.9.5.zip");
+        }
+    }
+
+    function AndroidDownloadClicked(){
+        const responce = confirm("Are you sure you want to download ScoutEye Android at this time?")
+        if(responce){
+            alert("ScoutEye Android is currently still underdevelopment, thus not available for download.")
+        }
+    }
+</script>
+
 </body>
 </html>

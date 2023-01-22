@@ -1,10 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <title>JavaScript Yes/No Confirmation box</title>
+    <script>
+        const confirmAction = () => {
+            const response = confirm("Are you sure you want to do that?");
+
+            if (response) {
+                alert("Ok was pressed");
+            } else {
+                alert("Cancel was pressed");
+            }
+        }
+    </script>
 </head>
 <body>
-
+<button onclick="confirmAction()">
+    Perform action
+</button>
 </body>
-</html>
+</html> 
