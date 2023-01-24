@@ -15,6 +15,17 @@
     transition-duration: 0.4s;
     cursor: pointer;
     }
+    .contactUsButton{
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
     <style>
         .introDiv{
             border: 5px outset red;
@@ -23,6 +34,26 @@
             width: 100%;
             background-color: white;
             text-align: center;
+        }
+    </style>
+    <style>
+        .contactUs{
+            border: 5px outset red;
+            border-radius: 20px;
+            height: 100px;
+            width: 100%;
+            background-color: white;
+            text-align: center;
+        }
+        .cButton{
+            background-color: white;
+
+            color: black;
+            border: 2px solid #4CAF50;
+        }
+        .cButton:hover{
+            background-color: #4CAF50;
+            color: white;
         }
     </style>
     <style>
@@ -83,6 +114,11 @@
 
 </div>
 
+<div class="contactUs">
+    <h2>Contact Us</h2>
+    <button onclick="OpenEmail()" class="contactUsButton cButton">Contact Us</button>
+</div>
+
 <div class="scoutEyeDownloadLink" style="float: left;">
     <h2>ScoutEye Desktop Download</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
@@ -114,6 +150,10 @@
         if(responce){
             alert("ScoutEye Android is currently still underdevelopment, thus not available for download.")
         }
+    }
+
+    function OpenEmail(){
+        window.location.href = "mailto:gabriel.tower@baxter-academy.org?subject=&body=";
     }
 </script>
 
