@@ -2,30 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>ScoutEye</title>
-    .downloadButton{
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    }
-    .contactUsButton{
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
+    <title>ScoutEye Download Webpage</title>
+    <style>
+        .downloadButton{
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+        .contactUsButton {
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+    </style>
     <style>
         .introDiv{
             border: 5px outset #6e0000;
@@ -38,7 +41,7 @@
     </style>
     <style>
         .contactUs{
-            border: 5px outset red;
+            border: 5px outset #6e0000;
             border-radius: 20px;
             height: 100px;
             width: 100%;
@@ -49,10 +52,10 @@
             background-color: white;
 
             color: black;
-            border: 2px solid #4CAF50;
+            border: 2px solid #f5c300;
         }
         .cButton:hover{
-            background-color: #4CAF50;
+            background-color: #f5c300;
             color: white;
         }
     </style>
@@ -116,19 +119,19 @@
 
 <div class="contactUs">
     <h2>Contact Us</h2>
-    <button onclick="OpenEmail()" class="contactUsButton cButton">Contact Us</button>
+    <button onclick="OpenEmail()" class=".contactUsButton cButton">Contact Us</button>
 </div>
 
 <div class="scoutEyeDownloadLink" style="float: left;">
     <h2>ScoutEye Desktop Download</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-    <button  onclick="DesktopDownloadClicked()" class="downloadButton andButton">Download</button>
+    <button  onclick="DesktopDownloadClicked()" class=".downloadButton andButton">Download</button>
 </div>
 
 <div class="scoutEyeDownloadLinkAndroid" style="margin-left: 50%;">
     <h2>ScoutEye Android Download</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-    <button onclick="AndroidDownloadClicked()" class="downloadButton andButton">Download</button>
+    <button onclick="AndroidDownloadClicked()" class=".downloadButton andButton">Download</button>
 </div>
 
 <div class="documentationDiv">
@@ -153,7 +156,7 @@
     }
 
     function OpenEmail(){
-        window.location.href = "mailto:gabriel.tower@baxter-academy.org?subject=&body=";
+        window.location.href = "mailto:gabriel.tower@baxter-academy.org caleb.cole@baxter-academy.org?subject=&body=";
     }
 </script>
 
