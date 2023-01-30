@@ -8,7 +8,7 @@
     <style>
 
         .header {
-            background-color: orange;
+            background-color: #6e0000;
             position: fixed;
             left: 0;
             right: 0;
@@ -66,12 +66,38 @@
             color: Red;
             margin-top: 150px;
         }
+
+        .toDownloads{
+            border: 5px outset #6e0000;
+            border-radius: 20px;
+            width: 48%;
+            height: 70px;
+            background-color: white;
+            text-align: center;
+            margin-top: 50px;
+            margin-left: 200px;
+        }
+
+        .downButton{
+            width: 90%;
+            height: 90%;
+            background-color: white;
+            color: black;
+            border: 2px solid #f5c300;
+            border-radius: 20px;
+            margin-top: 3px;
+        }
+
+        .downButton:hover{
+            background-color: #f5c300;
+            color: white;
+        }
     </style>
 
     <nav class="header">
         <ul>
             <li>
-                <a href="http://scout-eye.com/"> Home </a>
+                <a href="./index.html"> Home </a>
             </li>
             <li>
                 <a href="https://www.theoutliers.org/">FRC 5687 </a>
@@ -80,7 +106,7 @@
                 <a href="mailto:gabriel.tower@baxter-academy.org caleb.cole@baxter-academy.org?subject=&body="> Contact Us </a>
             </li>
             <li>
-                <a href="./downloads">Downloads</a>
+                <a href="./downloads.html">Downloads</a>
             </li>
             <li>
                 <a href="./documentation.html">Documentation</a>
@@ -99,13 +125,18 @@
 <div class="aboutDiv">
     <h1>Mission</h1>
     <p>To create a simplified method of FRC Match Scouting that allows teams to customize the data they track.
-        From year to year without the need to redesign a new solution.</p>
+        From year to year without the need to redesign a new solution with every new game.</p>
 </div>
 
 <hr class="headerBreakLine">
 
+<div class="toDownloads">
+    <button class="downButton" onclick="location.href = './downloads.html';">Downloads</button>
+</div>
+
 <script>
     function DesktopDownloadClicked() {
+        <!--Maybe remove confirmation-->
         const responce = confirm("Are you sure you want to download ScoutEye Suite Desktop at this time?")
         if(responce){
             window.location.replace("https://github.com/frc5687/ScoutEye/archive/refs/tags/v.1.9.5.zip");
@@ -113,6 +144,7 @@
     }
 
     function AndroidDownloadClicked(){
+        <!--Maybe remove confirmation-->
         const responce = confirm("Are you sure you want to download ScoutEye Android at this time?")
         if(responce){
             alert("ScoutEye Android is currently still underdevelopment, thus not available for download.")
