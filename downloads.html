@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ScoutEye Downloads</title>
+    <style>
+        .scoutEyeDownloadLink{
+            border: 5px outset #6e0000;
+            border-radius: 20px;
+            width: 48%;
+            height: 350px;
+            background-color: white;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .scoutEyeDownloadLinkAndroid{
+            border: 5px outset #6e0000;
+            border-radius: 20px;
+            width: 48%;
+            height: 350px;
+            background-color: white;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        <!--Change to something other than .andButton-->
+        .andButton{
+            width: 100px;
+            height: 25px;
+            background-color: white;
+            color: black;
+            border: 2px solid #f5c300;
+            border-radius: 20px;
+        }
+
+        .andButton:hover{
+            background-color: #f5c300;
+            color: white;
+        }
+
+        .downloadsHeader{
+            font-size: 20px;
+            height: 100px;
+            width: 100%;
+            color: #6e0000;
+            background-color: white;
+            text-align: center;
+            margin-top: 35px;
+        }
+
+        .header {
+            background-color: #6e0000;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 5px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 0 25px 0 black;
+        }
+
+        .header * {
+            display: inline;
+        }
+
+        .header li {
+            margin: 20px;
+        }
+
+        .header li a {
+            color: black;
+            text-decoration: none;
+        }
+    </style>
+
+    <nav class="header">
+        <ul>
+            <li>
+                <a href="./index.html"> Home </a>
+            </li>
+            <li>
+                <a href="https://www.theoutliers.org/">FRC 5687 </a>
+            </li>
+            <li>
+                <a href="mailto:gabriel.tower@baxter-academy.org caleb.cole@baxter-academy.org?subject=&body="> Contact Us </a>
+            </li>
+            <li>
+                <a href="./downloads.html">Downloads</a>
+            </li>
+            <li>
+                <a href="./documentation.html">Documentation</a>
+            </li>
+        </ul>
+    </nav>
+</head>
+<body>
+
+
+
+<div class="downloadsHeader">
+    <h1>Downloads</h1>
+    <p>Downloads for Desktop and Android</p>
+</div>
+
+<div class="scoutEyeDownloadLink" style="float: left;">
+    <h2>Desktop Suite</h2>
+    <p>A suite of software for FRC scouting on Windows desktop. Includes ScoutEye, ServerEye, APEye. Available on Windows 10+, and Dot Net 4.8+. See
+    documentation for specs.</p>
+    <button  onclick="DesktopDownloadClicked()" class=".downloadButton andButton">Download</button>
+</div>
+
+<div class="scoutEyeDownloadLinkAndroid" style="margin-left: 50%;">
+    <h2>Android</h2>
+    <p>A version of ScoutEye brought over to work on Android. Available on Android 5+, API 22+. See documentation for specs.</p>
+    <button onclick="AndroidDownloadClicked()" class=".downloadButton andButton">Download</button>
+</div>
+</body>
+</html>
