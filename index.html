@@ -1,33 +1,11 @@
+<!--Go example of what we're trying to emulate-->
+
 <!DOCTYPE html>
 <html lang="en" xmlns:width="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>ScoutEye Download Webpage</title>
     <style>
-        .downloadButton{
-            border: none;
-            color: white;
-            padding: 16px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            transition-duration: 0.4s;
-            cursor: pointer;
-        }
-        .contactUsButton {
-            border: none;
-            color: white;
-            padding: 16px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            transition-duration: 0.4s;
-            cursor: pointer;
-        }
 
         .header {
             background-color: orange;
@@ -50,7 +28,7 @@
         }
 
         .header li a {
-            color: blue;
+            color: black;
             text-decoration: none;
         }
 
@@ -74,38 +52,6 @@
             margin-top: 35px;
         }
 
-        .scoutEyeDownloadLink{
-            border: 5px outset #6e0000;
-            border-radius: 20px;
-            width: 48%;
-            height: 350px;
-            background-color: white;
-            text-align: center;
-            margin-top: 50px;
-        }
-
-        .scoutEyeDownloadLinkAndroid{
-            border: 5px outset #6e0000;
-            border-radius: 20px;
-            width: 48%;
-            height: 350px;
-            background-color: white;
-            text-align: center;
-            margin-top: 50px;
-        }
-
-        .andButton{
-            background-color: white;
-            color: black;
-            border: 2px solid #f5c300;
-            border-radius: 20px;
-        }
-
-        .andButton:hover{
-            background-color: #f5c300;
-            color: white;
-        }
-
         .documentationDiv{
             border: 5px outset #6e0000;
             border-radius: 20px;
@@ -120,34 +66,29 @@
             color: Red;
             margin-top: 150px;
         }
-
-        .downloadsHeader{
-            font-size: 20px;
-            height: 100px;
-            width: 100%;
-            color: #6e0000;
-            background-color: white;
-            text-align: center;
-            margin-top: 35px;
-        }
     </style>
 
+    <nav class="header">
+        <ul>
+            <li>
+                <a href="http://scout-eye.com/"> Home </a>
+            </li>
+            <li>
+                <a href="https://www.theoutliers.org/">FRC 5687 </a>
+            </li>
+            <li>
+                <a href="mailto:gabriel.tower@baxter-academy.org caleb.cole@baxter-academy.org?subject=&body="> Contact Us </a>
+            </li>
+            <li>
+                <a href="./downloads">Downloads</a>
+            </li>
+            <li>
+                <a href="./documentation.html">Documentation</a>
+            </li>
+        </ul>
+    </nav>
 </head>
 <body>
-
-<nav class="header">
-    <ul>
-        <li>
-            <a href="http://scout-eye.com/"> Home </a>
-        </li>
-        <li>
-            <a href="https://www.theoutliers.org/">FRC 5687 </a>
-        </li>
-        <li>
-            <a href="mailto:gabriel.tower@baxter-academy.org caleb.cole@baxter-academy.org?subject=&body="> Contact </a>
-        </li>
-    </ul>
-</nav>
 
 <div class="introDiv">
     <h2>ScoutEye</h2>
@@ -156,28 +97,12 @@
 <hr class="headerBreakLine">
 
 <div class="aboutDiv">
-    <h1>About</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    <h1>Mission</h1>
+    <p>To create a simplified method of FRC Match Scouting that allows teams to customize the data they track.
+        From year to year without the need to redesign a new solution.</p>
 </div>
 
 <hr class="headerBreakLine">
-
-<div class="downloadsHeader">
-    <h1>Downloads</h1>
-    <p>Downloads for Desktop and Android</p>
-</div>
-
-<div class="scoutEyeDownloadLink" style="float: left;">
-    <h2>Desktop</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-    <button  onclick="DesktopDownloadClicked()" class=".downloadButton andButton">Download</button>
-</div>
-
-<div class="scoutEyeDownloadLinkAndroid" style="margin-left: 50%;">
-    <h2>Android</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-    <button onclick="AndroidDownloadClicked()" class=".downloadButton andButton">Download</button>
-</div>
 
 <script>
     function DesktopDownloadClicked() {
