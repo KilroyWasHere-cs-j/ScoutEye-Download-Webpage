@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:width="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>ScoutEye Download Webpage</title>
@@ -55,48 +55,50 @@
         }
 
         .introDiv{
-            border: 5px outset #6e0000;
-            border-radius: 20px;
+            font-size: 70px;
             height: 100px;
             width: 100%;
+            color: #6e0000;
             background-color: white;
             text-align: center;
+            margin-top: 50px;
+        }
+
+        .aboutDiv{
+            font-size: 20px;
+            height: 100px;
+            width: 100%;
+            color: #6e0000;
+            background-color: white;
+            text-align: center;
+            margin-top: 35px;
         }
 
         .scoutEyeDownloadLink{
             border: 5px outset #6e0000;
             border-radius: 20px;
-            width: 50%;
+            width: 48%;
             height: 350px;
             background-color: white;
             text-align: center;
-        }
-
-        .andButton{
-            background-color: white;
-
-            color: black;
-            border: 20px solid #f5c300;
-        }
-
-        .andButton:hover{
-            background-color: #f5c300;
-            color: white;
+            margin-top: 50px;
         }
 
         .scoutEyeDownloadLinkAndroid{
             border: 5px outset #6e0000;
             border-radius: 20px;
-            width: 50%;
+            width: 48%;
             height: 350px;
             background-color: white;
             text-align: center;
+            margin-top: 50px;
         }
 
         .andButton{
             background-color: white;
             color: black;
             border: 2px solid #f5c300;
+            border-radius: 20px;
         }
 
         .andButton:hover{
@@ -112,6 +114,22 @@
             background-color: white;
             text-align: center;
         }
+
+        .headerBreakLine{
+            width: 100%;
+            color: Red;
+            margin-top: 150px;
+        }
+
+        .downloadsHeader{
+            font-size: 20px;
+            height: 100px;
+            width: 100%;
+            color: #6e0000;
+            background-color: white;
+            text-align: center;
+            margin-top: 35px;
+        }
     </style>
 
 </head>
@@ -119,30 +137,44 @@
 
 <nav class="header">
     <ul>
-        <li onclick="OpenEmail()">
-            <a> Home </a>
+        <li>
+            <a href="http://scout-eye.com/"> Home </a>
         </li>
         <li>
             <a href="https://www.theoutliers.org/">FRC 5687 </a>
         </li>
         <li>
-            <a href="#"> Contact </a>
+            <a href="mailto:gabriel.tower@baxter-academy.org caleb.cole@baxter-academy.org?subject=&body="> Contact </a>
         </li>
     </ul>
 </nav>
 
 <div class="introDiv">
-    <h2>ScoutEye Downloads and Documentation</h2>
+    <h2>ScoutEye</h2>
+</div>
+
+<hr class="headerBreakLine">
+
+<div class="aboutDiv">
+    <h1>About</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+</div>
+
+<hr class="headerBreakLine">
+
+<div class="downloadsHeader">
+    <h1>Downloads</h1>
+    <p>Downloads for Desktop and Android</p>
 </div>
 
 <div class="scoutEyeDownloadLink" style="float: left;">
-    <h2>ScoutEye Desktop Download</h2>
+    <h2>Desktop</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
     <button  onclick="DesktopDownloadClicked()" class=".downloadButton andButton">Download</button>
 </div>
 
 <div class="scoutEyeDownloadLinkAndroid" style="margin-left: 50%;">
-    <h2>ScoutEye Android Download</h2>
+    <h2>Android</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
     <button onclick="AndroidDownloadClicked()" class=".downloadButton andButton">Download</button>
 </div>
@@ -161,11 +193,6 @@
             alert("ScoutEye Android is currently still underdevelopment, thus not available for download.")
         }
     }
-
-    function OpenEmail(){
-        window.location.href = "mailto:gabriel.tower@baxter-academy.org caleb.cole@baxter-academy.org?subject=&body=";
-    }
 </script>
-
 </body>
 </html>
