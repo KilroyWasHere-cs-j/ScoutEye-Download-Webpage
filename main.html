@@ -109,8 +109,47 @@
             text-align: center;
         }
     </style>
+    <style>
+        .header {
+            background-color: orange;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 5px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 0 25px 0 black;
+        }
+        .header * {
+            display: inline;
+        }
+        .header li {
+            margin: 20px;
+        }
+        .header li a {
+            color: blue;
+            text-decoration: none;
+        }
+    </style>
+
+
 </head>
 <body>
+
+<nav class="header">
+    <ul>
+        <li>
+            <a href="#"> Home </a>
+        </li>
+        <li>
+            <a href="#"> About </a>
+        </li>
+        <li>
+            <a href="#"> Contact </a>
+        </li>
+    </ul>
+</nav>
 
 <div class="introDiv">
     <h2>ScoutEye Downloads and Documentation</h2>
