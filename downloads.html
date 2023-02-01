@@ -42,8 +42,8 @@
 
         .downloadsHeader{
             font-size: 20px;
-            height: 100px;
             width: 100%;
+            height: 100px;
             color: #6e0000;
             background-color: white;
             text-align: center;
@@ -75,11 +75,11 @@
             text-decoration: none;
         }
 
-        .installDesktop{
+        .downloadGuide{
             border: 5px outset #6e0000;
             border-radius: 20px;
             width: 100%;
-            height: 120px;
+            height: 160px;
             background-color: white;
             text-align: center;
             margin-top: 20px;
@@ -113,8 +113,8 @@
     <p>Downloads for Desktop and Android</p>
 </div>
 
-<div class="installDesktop">
-    <h1 class="headerText">ScoutEye Suite Desktop Install</h1>
+<div class="downloadGuide">
+    <h1 class="headerText">Installation Instructions</h1>
     <p>Download the latest version from the Downloads page.
         Extract files contents, <br>and run ScoutEye.exe to start ScoutEye.</p>
 </div>
@@ -131,5 +131,23 @@
     <p>A version of ScoutEye brought over to work on Android. Available on Android 5+, API 22+. See documentation for specs.</p>
     <button onclick="AndroidDownloadClicked()" class=".downloadButton andButton">Download</button>
 </div>
+
+<script>
+    function DesktopDownloadClicked() {
+        <!--Maybe remove confirmation-->
+        const responce = confirm("Are you sure you want to download ScoutEye Suite Desktop at this time?")
+        if(responce){
+            window.location.replace("https://github.com/frc5687/ScoutEye/archive/refs/tags/v.1.9.5.zip");
+        }
+    }
+
+    function AndroidDownloadClicked(){
+        <!--Maybe remove confirmation-->
+        const responce = confirm("Are you sure you want to download ScoutEye Android at this time?")
+        if(responce){
+            alert("ScoutEye Android is currently still underdevelopment, thus not available for download.")
+        }
+    }
+</script>
 </body>
 </html>
