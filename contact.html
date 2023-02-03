@@ -99,6 +99,34 @@
             margin-left: 750px;
         }
 
+        .foundBugButton{
+            width: 90%;
+            height: 90%;
+            background-color: #410da1;
+            color: #e9e6f0;
+            border: 2px solid #e9e6f0;
+            border-radius: 20px;
+            margin-top: 3px;
+        }
+
+        .foundBugButton:hover{
+            background-color: #f5c300;
+            color: #e9e6f0;
+        }
+
+        .endBuffer{
+            width: 100%;
+            height: 200px;
+            margin-top: 20px;
+        }
+
+        .endBufferBlock{
+            width: 100%;
+            height: 200px;
+            background: #410da1;
+            box-shadow: 0 0 10px 0 #010003;
+        }
+
     </style>
 
     <nav class="header">
@@ -145,14 +173,18 @@
 <div class="foundBug">
     <h1>Bug?</h1>
     <p>Report it here</p>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeZrhP4T2JB0svs0TE-Po9x6Nf7HRRkRvxnSc7u2limTN8jWA/viewform?embedded=true" width="640" height="1114" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeZrhP4T2JB0svs0TE-Po9x6Nf7HRRkRvxnSc7u2limTN8jWA/viewform?usp=sf_link">Alternate form link</a>
+    <button class="foundBugButton" onclick="redirectForm()">Form</button>
 </div>
 
+<div class="endBuffer"><div class="endBufferBlock"/></div>
 
 <script>
     function redirectEmail(){
         window.location.href = "mailto:gabriel.tower@baxter-academy.org caleb.cole@baxter-academy.org?subject=&body=";
+    }
+
+    function redirectForm(){
+        window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSeZrhP4T2JB0svs0TE-Po9x6Nf7HRRkRvxnSc7u2limTN8jWA/viewform?usp=sf_link";
     }
 </script>
 
