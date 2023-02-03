@@ -1,4 +1,7 @@
-<!--Go example of what we're trying to emulate-->
+<!-- Kilroy Was Here -->
+<!-- Gray #212121 -->
+<!-- Purple #410da1 -->
+<!-- White #e9e6f0 -->
 
 <!DOCTYPE html>
 <html lang="en" xmlns:width="http://www.w3.org/1999/xhtml">
@@ -8,8 +11,12 @@
     <link rel="icon" href="http://scout-eye.com//favicon.ico">
     <style>
 
+        .body{
+            background: #212121;
+        }
+
         .header {
-            background-color: #6e0000;
+            background-color: #410da1;
             position: fixed;
             left: 0;
             right: 0;
@@ -37,8 +44,8 @@
             font-size: 70px;
             height: 100px;
             width: 100%;
-            color: #6e0000;
-            background-color: white;
+            color: #e9e6f0;
+            background-color: #212121;
             text-align: center;
             margin-top: 50px;
         }
@@ -47,15 +54,15 @@
             font-size: 20px;
             height: 100px;
             width: 100%;
-            color: #6e0000;
-            background-color: white;
+            color: #e9e6f0;
+            background-color: #212121;
             text-align: center;
             margin-top: 35px;
         }
 
         .headerBreakLine{
             width: 100%;
-            color: Red;
+            color: #410da1;
             margin-top: 150px;
         }
 
@@ -63,7 +70,7 @@
             border-radius: 20px;
             width: 48%;
             height: 70px;
-            background-color: white;
+            background-color: #212121;
             text-align: center;
             margin-top: 50px;
             margin-left: 26%;
@@ -72,9 +79,9 @@
         .downButton{
             width: 90%;
             height: 90%;
-            background-color: white;
-            color: black;
-            border: 2px solid #f5c300;
+            background-color: #410da1;
+            color: #e9e6f0;
+            border: 2px solid #e9e6f0;
             border-radius: 20px;
             margin-top: 3px;
         }
@@ -105,7 +112,8 @@
         </ul>
     </nav>
 </head>
-<body>
+
+<body class="body">
 
 <div class="introDiv">
     <h2>ScoutEye</h2>
@@ -124,5 +132,6 @@
 <div class="toDownloads">
     <button class="downButton" onclick="location.href = './downloads.html';">Downloads</button>
 </div>
+
 </body>
 </html>
