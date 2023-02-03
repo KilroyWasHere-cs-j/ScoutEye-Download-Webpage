@@ -1,11 +1,161 @@
+<!-- Kilroy Was Here -->
+<!-- Gray #212121 -->
+<!-- Purple #410da1 -->
+<!-- White #e9e6f0 -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Contact Us</title>
     <link rel="icon" href="http://scout-eye.com//favicon.ico">
+
+    <style>
+        .body{
+            background: #212121;
+        }
+
+        .header {
+            background-color: #410da1;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 5px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 0 25px 0 black;
+        }
+
+        .header * {
+            display: inline;
+        }
+
+        .header li {
+            margin: 20px;
+        }
+
+        .header li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .needHelp{
+            font-size: 20px;
+            height: 100px;
+            width: 400px;
+            color: #e9e6f0;
+            background-color: #212121;
+            text-align: center;
+            margin-top: 50px;
+            margin-left: 750px;
+        }
+
+        .headerBreakLine{
+            width: 100%;
+            color: #410da1;
+            margin-top: 150px;
+        }
+
+        .stillHaveIssues{
+            font-size: 20px;
+            height: 100px;
+            width: 400px;
+            color: #e9e6f0;
+            background-color: #212121;
+            text-align: center;
+            margin-top: 50px;
+            margin-left: 750px;
+        }
+
+        .emailUs{
+            font-size: 70px;
+            height: 100px;
+            width: 400px;
+            color: #e9e6f0;
+            background-color: #212121;
+            text-align: center;
+            margin-left: 750px;
+        }
+
+        .emailUsButton{
+            width: 90%;
+            height: 90%;
+            background-color: #410da1;
+            color: #e9e6f0;
+            border: 2px solid #e9e6f0;
+            border-radius: 20px;
+            margin-top: 3px;
+        }
+
+        .foundBug{
+            font-size: 20px;
+            height: 100px;
+            width: 400px;
+            color: #e9e6f0;
+            background-color: #212121;
+            text-align: center;
+            margin-top: 50px;
+            margin-left: 750px;
+        }
+
+    </style>
+
+    <nav class="header">
+        <ul>
+            <li>
+                <a href="./index.html"> Home </a>
+            </li>
+            <li>
+                <a href="https://www.theoutliers.org/">FRC 5687 </a>
+            </li>
+            <li>
+                <a href="./contact.html"> Contact Us </a>
+            </li>
+            <li>
+                <a href="./downloads.html">Downloads</a>
+            </li>
+            <li>
+                <a href="./documentation.html">Documentation</a>
+            </li>
+        </ul>
+    </nav>
+
 </head>
-<body>
+
+<body class="body">
+
+<div class="needHelp">
+    <h1>Need help troubleshooting?</h1>
+    <p>Please look at our documentation to see if your problem can be resolved.</p>
+</div>
+
+<hr class="headerBreakLine">
+
+<div class="stillHaveIssues">
+    <h2>Still having problems?</h2>
+</div>
+
+<div class="emailUs">
+    <button class="emailUsButton" onclick="redirectEmail()">Email Us</button>
+</div>
+
+<hr class="headerBreakLine">
+
+<div class="foundBug">
+    <h1>Bug?</h1>
+    <p>Report it here</p>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeZrhP4T2JB0svs0TE-Po9x6Nf7HRRkRvxnSc7u2limTN8jWA/viewform?embedded=true" width="640" height="1114" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeZrhP4T2JB0svs0TE-Po9x6Nf7HRRkRvxnSc7u2limTN8jWA/viewform?usp=sf_link">Alternate form link</a>
+</div>
+
+
+<script>
+    function redirectEmail(){
+        window.location.href = "mailto:gabriel.tower@baxter-academy.org caleb.cole@baxter-academy.org?subject=&body=";
+    }
+</script>
 
 </body>
+
 </html>
