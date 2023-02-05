@@ -1,117 +1,234 @@
+<!-- Kilroy Was Here -->
+<!-- Gray #212121 -->
+<!-- Purple #410da1 -->
+<!-- White #e9e6f0 -->
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:width="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
-    <title>ScoutEye</title>
+    <title>ScoutEye Download Webpage</title>
     <link rel="icon" href="http://scout-eye.com//favicon.ico">
-    .downloadButton{
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    }
     <style>
+
+        .body{
+            background: #212121;
+        }
+
+        .header{
+            border: 1px solid #ccc;
+            border-width: 1px 0;
+            background-color: #410da1;
+            left: 0;
+            right: 0;
+            top: 2px;
+            height: 50px;
+            list-style:none;
+            margin:0;
+            padding:0;
+            text-align:center;
+            box-shadow: 0 0 25px 0 #010003;
+
+        }
+        .header li{
+            margin: 40px;
+            display:inline;
+        }
+        .header a{
+            font-size: 20px;
+            color: #e9e6f0;
+            display:inline-block;
+            text-decoration: none;
+            padding:1px;
+        }
+
         .introDiv{
-            border: 5px outset red;
-            border-radius: 20px;
-            height: 10px;
+            font-size: 70px;
+            height: 100px;
             width: 100%;
-            background-color: lightyellow;
+            color: #e9e6f0;
+            background-color: #212121;
             text-align: center;
+            margin-top: 50px;
         }
-    </style>
-    <style>
-        .scoutEyeDownloadLink{
-            border: 5px outset red;
-            border-radius: 20px;
-            width: 50%;
-            height: 350px;
-            background-color: lightyellow;
-            text-align: center;
-        }
-        .andButton{
-            background-color: white;
 
-            color: black;
-            border: 20px solid #4CAF50;
+        .aboutDiv{
+            font-size: 20px;
+            height: 100px;
+            width: 100%;
+            color: #e9e6f0;
+            background-color: #212121;
+            text-align: center;
+            margin-top: 35px;
         }
-        .andButton:hover{
-            background-color: #4CAF50;
+
+        .headerBreakLine{
+            width: 100%;
+            color: #410da1;
+            margin-top: 150px;
+        }
+
+        .toDownloads{
+            font-size: 15px;
+            color: #e9e6f0;
+            border-radius: 20px;
+            width: 48%;
+            height: 70px;
+            background-color: #212121;
+            text-align: center;
+            margin-top: 50px;
+            margin-left: 26%;
+        }
+
+        .downButton{
+            width: 90%;
+            height: 90%;
+            background-color: #410da1;
+            color: #e9e6f0;
+            border: 2px solid #e9e6f0;
+            border-radius: 20px;
+            margin-top: 3px;
+        }
+
+        .downButton:hover{
+            background-color: #f5c300;
             color: white;
         }
-    </style>
-    <style>
-        .scoutEyeDownloadLinkAndroid{
-            border: 5px outset red;
+
+        .newRelease{
+            font-size: 15px;
+            color: #e9e6f0;
             border-radius: 20px;
-            width: 50%;
-            height: 350px;
-            background-color: lightyellow;
+            width: 48%;
+            height: 70px;
+            background-color: #212121;
             text-align: center;
+            margin-top: 120px;
+            margin-left: 26%;
         }
-        .andButton{
-            background-color: white;
-            color: black;
-            border: 2px solid #4CAF50;
+
+        .roadMap{
+            font-size: 15px;
+            color: #e9e6f0;
+            border-radius: 20px;
+            width: 48%;
+            height: 70px;
+            background-color: #212121;
+            text-align: center;
+            margin-top: 160px;
+            margin-left: 26%;
         }
-        .andButton:hover{
-            background-color: #4CAF50;
-            color: white;
+
+        .roadMapUL{
+            list-style-type: lower-greek;
+        }
+
+        .roadMapUL li {
+            margin: 5px;
+        }
+
+        .roadMapUL li a {
+            color: #e9e6f0;
+            text-decoration: none;
+        }
+
+        .endImage{
+            width: 500px;
+            height: 500px;
+            margin-top: 100px;
+            margin-left: 38%;
+        }
+
+        .endText{
+            font-size: 20px;
+            margin-left: 48%;
+        }
+
+        .endBuffer{
+            width: 100%;
+            height: 200px;
+            margin-top: 20px;
+        }
+
+        .endBufferBlock{
+            width: 100%;
+            height: 200px;
+            background: #410da1;
+            box-shadow: 0 0 10px 0 #010003;
         }
     </style>
 
-    <style>
-        .documentationDiv{
-            border: 5px outset red;
-            border-radius: 20px;
-            width: 100%;
-            height: 350px;
-            background-color: lightyellow;
-            text-align: center;
-        }
-    </style>
+    <nav class="header">
+        <ul>
+            <li>
+                <a href="./index.html"> Home </a>
+            </li>
+            <li>
+                <a href="https://www.theoutliers.org/">FRC 5687 </a>
+            </li>
+            <li>
+                <a href="./contact.html"> Contact Us </a>
+            </li>
+            <li>
+                <a href="./downloads.html">Downloads</a>
+            </li>
+            <li>
+                <a href="./documentation.html">Documentation</a>
+            </li>
+        </ul>
+    </nav>
 </head>
-<body>
+
+<body class="body">
 
 <div class="introDiv">
-    <h2>ScoutEye Downloads and Documentation</h2>
+    <h2>ScoutEye</h2>
 </div>
 
-<div class="scoutEyeDownloadLink" style="float: left;" onclick="DesktopDownloadClicked()">
-    <h2>ScoutEye Desktop Download</h2>
-    <button class="downloadButton andButton">Download</button>
+<hr class="headerBreakLine">
+
+<div class="aboutDiv">
+    <h1>Mission</h1>
+    <p>To create a simplified method of FRC Match Scouting that allows teams to customize the data they track.
+        From year to year without the need to redesign a new solution with every new game.</p>
 </div>
 
-<div class="scoutEyeDownloadLinkAndroid" style="margin-left: 50%;" onclick="AndroidDownloadClicked()">
-    <h2>ScoutEye Android Download</h2>
-    <button class="downloadButton andButton">Download</button>
+<hr class="headerBreakLine">
+
+<div class="toDownloads">
+    <h1>What to use ScoutEye. Download it here.</h1>
+    <button class="downButton" onclick="location.href = './downloads.html';">Downloads</button>
 </div>
 
-<div class="documentationDiv">
-    <h2>Documentation</h2>
+<div class="newRelease">
+    <h1>Check out the 2023-2024 release of ScoutEye on GitHub</h1>
+    <button class="downButton" onclick="GitHubRedirect()">Go!</button>
 </div>
+
+<div class="roadMap">
+    <h1>2023 ScoutEye development RoadMap overview</h1>
+    <ul id="list" class="roadMapUL">
+        <li>ScoutEye Android</li>
+        <li>TBA API support for website</li>
+        <li>ServerEye</li>
+        <li>APEye</li>
+    </ul>
+</div>
+
+<div class="endBuffer">
+    <img class="endImage" src="./ScoutEyeHorusTransparent-02.png" alt="Horus">
+
+    <div class="endBufferBlock">
+        <p class="endText">Kilroy Was Here</p>
+    </div>
+</div>
+
+</body>
 
 <script>
-    function DesktopDownloadClicked() {
-        const responce = confirm("Are you sure you want to download ScoutEye Suite Desktop at this time?")
-        if(responce){
-            window.location.replace("https://github.com/frc5687/ScoutEye/archive/refs/tags/v.1.9.5.zip");
-        }
-    }
-
-    function AndroidDownloadClicked(){
-        const responce = confirm("Are you sure you want to download ScoutEye Android at this time?")
-        if(responce){
-            alert("ScoutEye Android is currently still underdevelopment, thus not available for download.")
-        }
+    function GitHubRedirect(){
+        window.location.href = "https://github.com/frc5687/ScoutEye/releases";
     }
 </script>
 
-</body>
 </html>

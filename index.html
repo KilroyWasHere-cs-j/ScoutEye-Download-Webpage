@@ -15,29 +15,31 @@
             background: #212121;
         }
 
-        .header {
+        .header{
+            border: 1px solid #ccc;
+            border-width: 1px 0;
             background-color: #410da1;
-            position: fixed;
             left: 0;
             right: 0;
-            top: 5px;
-            height: 40px;
-            display: flex;
-            align-items: center;
+            top: 2px;
+            height: 50px;
+            list-style:none;
+            margin:0;
+            padding:0;
+            text-align:center;
             box-shadow: 0 0 25px 0 #010003;
-        }
 
-        .header * {
-            display: inline;
         }
-
-        .header li {
-            margin: 20px;
+        .header li{
+            margin: 40px;
+            display:inline;
         }
-
-        .header li a {
+        .header a{
+            font-size: 20px;
             color: #e9e6f0;
+            display:inline-block;
             text-decoration: none;
+            padding:1px;
         }
 
         .introDiv{
@@ -117,12 +119,24 @@
             margin-left: 26%;
         }
 
-        .roadMapUL{
+        .roadMapItems{
+            font-size: 15px;
+            color: #e9e6f0;
+            border-radius: 20px;
+            width: 20%;
+            height: 70px;
+            background-color: #212121;
+            text-align: center;
+            margin-top: 20px;
+            margin-left: 39%;
+        }
+
+        .roadMapItemsUL{
             list-style-type: lower-greek;
         }
 
-        .roadMapUL li {
-            margin: 5px;
+        .roadMapItemsUL li {
+            margin: 10px;
         }
 
         .roadMapUL li a {
@@ -205,12 +219,14 @@
 
 <div class="roadMap">
     <h1>2023 ScoutEye development RoadMap overview</h1>
-    <ul id="list" class="roadMapUL">
-        <li>ScoutEye Android</li>
-        <li>TBA API support for website</li>
-        <li>ServerEye</li>
-        <li>APEye</li>
-    </ul>
+    <div class="roadMapItems">
+        <ul id="list" class="roadMapItemsUL">
+            <li>ScoutEye Android</li>
+            <li>TBA API support for website</li>
+            <li>ServerEye</li>
+            <li>APEye</li>
+        </ul>
+    </div>
 </div>
 
 <div class="endBuffer">
