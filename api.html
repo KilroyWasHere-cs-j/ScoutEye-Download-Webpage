@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>API</title>
+</head>
+<body>
+
+<button onclick="call()">Call</button>
+
+<p id="one"></p>
+<p id="two"></p>
+
+<input type="text" id="event_name" name="event_name">
+
+<script>
+    function call(){
+        const Http = new XMLHttpRequest();
+        const url='https://www.thebluealliance.com/api/v3/team/frc5687/events/2023';
+        const key="yj3WJMJc7W30bn24MLN92bW8oyCQ0VifWr7dCUA7oLPcWqrbPOCD6WFKRXhkC446";
+        Http.open("GET", url);
+        Http.setRequestHeader("X-TBA-Auth-Key",key);
+        Http.send();
+
+        Http.onreadystatechange = (e) => {
+            return Http.responseText;
+        }
+    }
+</script>
+</body>
+</html>
