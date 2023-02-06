@@ -6,7 +6,7 @@
 </head>
 <body>
 
-<button onclick="getPageData()">Call</button>
+<button onclick="call()">Call</button>
 
 <p id="one"></p>
 <p id="two"></p>
@@ -15,20 +15,16 @@
 
 <script>
 
-    function getPageData(){
-        document.getElementById("one").innerHTML = call();
-    }
-
     function call(){
         const Http = new XMLHttpRequest();
-        const url='https://www.thebluealliance.com/api/v3/team/frc5687/events/2023';
+        const url='https://www.thebluealliance.com/api/v3/team/frc5687/events/2023/simple';
         const key="yj3WJMJc7W30bn24MLN92bW8oyCQ0VifWr7dCUA7oLPcWqrbPOCD6WFKRXhkC446";
         Http.open("GET", url);
         Http.setRequestHeader("X-TBA-Auth-Key",key);
         Http.send();
 
         Http.onreadystatechange = (e) => {
-            return Http.responseText;
+            document.getElementById("one").innerHTML = Http.responseText;
         }
     }
 </script>
