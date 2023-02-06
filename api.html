@@ -6,7 +6,8 @@
 </head>
 <body>
 
-<button onclick="call()">Call</button>
+<button onclick="getEventId()">Call</button>
+<button onclick="getMatchData()">GetMatchData</button>
 
 <p id="one"></p>
 <p id="two"></p>
@@ -15,7 +16,9 @@
 
 <script>
 
-    function call(){
+    let eventKey = ""
+
+    function getEventId(){
         const Http = new XMLHttpRequest();
         const url='https://www.thebluealliance.com/api/v3/team/frc5687/events/2023/simple';
         const key="yj3WJMJc7W30bn24MLN92bW8oyCQ0VifWr7dCUA7oLPcWqrbPOCD6WFKRXhkC446";
@@ -25,11 +28,27 @@
 
         Http.onreadystatechange = (e) => {
             response = Http.responseText
-            document.getElementById("one").innerHTML = response
             const obj = JSON.parse(response)
-            document.getElementById("two").innerHTML = obj[1].start_date
+            eventKey = obj[0].key
+            document.getElementById("one").innerHTML = eventKey
         }
     }
+
+    function getMatchData(){
+        const Http = new XMLHttpRequest();
+        const url='https://www.thebluealliance.com/api/v3/team/frc5687/event/' + eventKey.toString() + '/status'
+        const key="yj3WJMJc7W30bn24MLN92bW8oyCQ0VifWr7dCUA7oLPcWqrbPOCD6WFKRXhkC446";
+        Http.open("GET", url);
+        Http.setRequestHeader("X-TBA-Auth-Key",key);
+        Http.send();
+
+        Http.onreadystatechange = (e) => {
+            response = Http.responseText
+            const obj = JSON.parse(response)
+            document.getElementById("two").innerHTML = obj[0]
+        }
+    }
+
 </script>
 </body>
 </html>
