@@ -6,7 +6,7 @@
 </head>
 <body>
 
-<button onclick="call()">Call</button>
+<button onclick="getPageData()">Call</button>
 
 <p id="one"></p>
 <p id="two"></p>
@@ -14,6 +14,11 @@
 <input type="text" id="event_name" name="event_name">
 
 <script>
+
+    function getPageData(){
+        document.getElementById("one").innerHTML = call();
+    }
+
     function call(){
         const Http = new XMLHttpRequest();
         const url='https://www.thebluealliance.com/api/v3/team/frc5687/events/2023';
