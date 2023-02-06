@@ -24,7 +24,10 @@
         Http.send();
 
         Http.onreadystatechange = (e) => {
-            document.getElementById("one").innerHTML = Http.responseText;
+            response = Http.responseText
+            document.getElementById("one").innerHTML = response
+            const obj = JSON.parse(response)
+            document.getElementById("two").innerHTML = obj[1].start_date
         }
     }
 </script>
