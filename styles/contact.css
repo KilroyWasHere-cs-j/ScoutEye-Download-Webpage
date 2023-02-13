@@ -1,5 +1,5 @@
 .body{
-    background: #212121;
+    background: #252526;
 }
 
 .header{
@@ -14,13 +14,15 @@
     margin:0;
     padding:0;
     text-align:center;
-    box-shadow: 0 0 25px 0 #010003;
-
+    box-shadow: 0 0 25px 0 #252526;
+    box-shadow: 0 5px 50px #410da1;
 }
+
 .header li{
     margin: 40px;
     display:inline;
 }
+
 .header a{
     font-size: 20px;
     color: #e9e6f0;
@@ -34,7 +36,7 @@
     height: 100px;
     width: 400px;
     color: #e9e6f0;
-    background-color: #212121;
+    background-color: #252526;
     text-align: center;
     margin-top: 50px;
     margin-left: 750px;
@@ -51,7 +53,7 @@
     height: 100px;
     width: 400px;
     color: #e9e6f0;
-    background-color: #212121;
+    background-color: #252526;
     text-align: center;
     margin-top: 50px;
     margin-left: 750px;
@@ -62,7 +64,7 @@
     height: 100px;
     width: 400px;
     color: #e9e6f0;
-    background-color: #212121;
+    background-color: #252526;
     text-align: center;
     margin-left: 750px;
 }
@@ -82,7 +84,7 @@
     height: 100px;
     width: 400px;
     color: #e9e6f0;
-    background-color: #212121;
+    background-color: #252526;
     text-align: center;
     margin-top: 50px;
     margin-left: 750px;
@@ -99,8 +101,7 @@
 }
 
 .foundBugButton:hover{
-    background-color: #f5c300;
-    color: #e9e6f0;
+    box-shadow: 0 5px 100px #410da1;
 }
 
 .endBuffer{
