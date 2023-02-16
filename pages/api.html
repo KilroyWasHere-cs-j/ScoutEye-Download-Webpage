@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>API</title>
+    <div class="navbar">
+        <a href="../index.html">Home</a>
+        <a href="./devlog.html">Dev log</a>
+        <div class="dropdown">
+          <button class="dropbtn">More
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="./contact.html">Contact Us</a>
+            <a href="https://www.theoutliers.org/">FRC 5687</a>
+            <a href="./documentation.html">Documentation</a>
+            <a href="./api.html">API</a>
+          </div>
+        </div>
+      </div> 
+
+</head>
+<body>
+
+<button onclick="getEventId()">Call</button>
+<button onclick="getMatchData()">GetMatchData</button>
+
+<p id="one"></p>
+<p id="two"></p>
+
+<input type="text" id="event_name" name="event_name">
+
+<script src="../scripts/api.js"></script> 
+
+</body>
+</html>

@@ -9,172 +9,24 @@
     <meta charset="UTF-8">
     <title>ScoutEye Download Webpage</title>
     <link rel="icon" href="http://scout-eye.com//favicon.ico">
-    <style>
+    <link rel="stylesheet" href="./styles/index.css">
 
-        .body{
-            background: #212121;
-        }
+    <div class="navbar">
+        <a href="./index.html">Home</a>
+        <a href="./pages/devlog.html">Dev Log</a>
+        <div class="dropdown">
+          <button class="dropbtn">More
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="./pages/contact.html">Contact Us</a>
+            <a href="https://www.theoutliers.org/">FRC 5687</a>
+            <a href="./pages/documentation.html">Documentation</a>
+            <a href="./pages/api.html">API</a>
+          </div>
+        </div>
+      </div> 
 
-        .header {
-            background-color: #410da1;
-            position: fixed;
-            left: 0;
-            right: 0;
-            top: 5px;
-            height: 40px;
-            display: flex;
-            align-items: center;
-            box-shadow: 0 0 25px 0 #010003;
-        }
-
-        .header * {
-            display: inline;
-        }
-
-        .header li {
-            margin: 20px;
-        }
-
-        .header li a {
-            color: #e9e6f0;
-            text-decoration: none;
-        }
-
-        .introDiv{
-            font-size: 70px;
-            height: 100px;
-            width: 100%;
-            color: #e9e6f0;
-            background-color: #212121;
-            text-align: center;
-            margin-top: 50px;
-        }
-
-        .aboutDiv{
-            font-size: 20px;
-            height: 100px;
-            width: 100%;
-            color: #e9e6f0;
-            background-color: #212121;
-            text-align: center;
-            margin-top: 35px;
-        }
-
-        .headerBreakLine{
-            width: 100%;
-            color: #410da1;
-            margin-top: 150px;
-        }
-
-        .toDownloads{
-            font-size: 15px;
-            color: #e9e6f0;
-            border-radius: 20px;
-            width: 48%;
-            height: 70px;
-            background-color: #212121;
-            text-align: center;
-            margin-top: 50px;
-            margin-left: 26%;
-        }
-
-        .downButton{
-            width: 90%;
-            height: 90%;
-            background-color: #410da1;
-            color: #e9e6f0;
-            border: 2px solid #e9e6f0;
-            border-radius: 20px;
-            margin-top: 3px;
-        }
-
-        .downButton:hover{
-            background-color: #f5c300;
-            color: white;
-        }
-
-        .newRelease{
-            font-size: 15px;
-            color: #e9e6f0;
-            border-radius: 20px;
-            width: 48%;
-            height: 70px;
-            background-color: #212121;
-            text-align: center;
-            margin-top: 120px;
-            margin-left: 26%;
-        }
-
-        .roadMap{
-            font-size: 15px;
-            color: #e9e6f0;
-            border-radius: 20px;
-            width: 48%;
-            height: 70px;
-            background-color: #212121;
-            text-align: center;
-            margin-top: 160px;
-            margin-left: 26%;
-        }
-
-        .roadMapUL{
-            list-style-type: lower-greek;
-        }
-
-        .roadMapUL li {
-            margin: 5px;
-        }
-
-        .roadMapUL li a {
-            color: #e9e6f0;
-            text-decoration: none;
-        }
-
-        .endImage{
-            width: 500px;
-            height: 500px;
-            margin-top: 100px;
-            margin-left: 38%;
-        }
-
-        .endText{
-            font-size: 20px;
-            margin-left: 48%;
-        }
-
-        .endBuffer{
-            width: 100%;
-            height: 200px;
-            margin-top: 20px;
-        }
-
-        .endBufferBlock{
-            width: 100%;
-            height: 200px;
-            background: #410da1;
-            box-shadow: 0 0 10px 0 #010003;
-        }
-    </style>
-
-    <nav class="header">
-        <ul>
-            <li>
-                <a href="./index.html"> Home </a>
-            </li>
-            <li>
-                <a href="https://www.theoutliers.org/">FRC 5687 </a>
-            </li>
-            <li>
-                <a href="./contact.html"> Contact Us </a>
-            </li>
-            <li>
-                <a href="./downloads.html">Downloads</a>
-            </li>
-            <li>
-                <a href="./documentation.html">Documentation</a>
-            </li>
-        </ul>
-    </nav>
 </head>
 
 <body class="body">
@@ -188,14 +40,14 @@
 <div class="aboutDiv">
     <h1>Mission</h1>
     <p>To create a simplified method of FRC Match Scouting that allows teams to customize the data they track.
-        From year to year without the need to redesign a new solution with every new game.</p>
+        Without the need to redesign a new solution with every new game.</p>
 </div>
 
 <hr class="headerBreakLine">
 
 <div class="toDownloads">
-    <h1>What to use ScoutEye. Download it here.</h1>
-    <button class="downButton" onclick="location.href = './downloads.html';">Downloads</button>
+    <h1>Want to use ScoutEye? Download it here.</h1>
+    <button class="downButton" onclick="location.href = './pages/downloads.html';">Downloads</button>
 </div>
 
 <div class="newRelease">
@@ -203,18 +55,20 @@
     <button class="downButton" onclick="GitHubRedirect()">Go!</button>
 </div>
 
-<div class="roadMap">
+<!-- <div class="roadMap">
     <h1>2023 ScoutEye development RoadMap overview</h1>
-    <ul id="list" class="roadMapUL">
-        <li>ScoutEye Android</li>
-        <li>TBA API support for website</li>
-        <li>ServerEye</li>
-        <li>APEye</li>
-    </ul>
-</div>
+    <div class="roadMapItems">
+        <ul id="list" class="roadMapItemsUL">
+            <li>ScoutEye Android</li>
+            <li>TBA API support for website</li>
+            <li>ServerEye</li>
+            <li>APEye</li>
+        </ul>
+    </div>
+</div> -->
 
 <div class="endBuffer">
-    <img class="endImage" src="./ScoutEyeHorusTransparent-02.png" alt="Horus">
+    <!-- <img class="endImage" src="../ScoutEyeHorusTransparent-02.png" alt="Horus"> -->
 
     <div class="endBufferBlock">
         <p class="endText">Kilroy Was Here</p>
@@ -223,10 +77,6 @@
 
 </body>
 
-<script>
-    function GitHubRedirect(){
-        window.location.href = "https://github.com/frc5687/ScoutEye/releases";
-    }
-</script>
+<script src="../scripts/index.js"></script> 
 
 </html>

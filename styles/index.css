@@ -1,0 +1,169 @@
+html *
+{
+   font-family: Helvetica !important;
+}
+
+.body{
+    background: #252526;
+}
+
+.introDiv{
+    font-size: 70px;
+    height: 100px;
+    width: 100%;
+    color: #e9e6f0;
+    background-color: #252526;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.aboutDiv{
+    font-size: 20px;
+    height: 100px;
+    width: 100%;
+    color: #e9e6f0;
+    background-color: #252526;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.headerBreakLine{
+    width: 100%;
+    color: #410da1;
+    margin-top: 150px;
+}
+
+.toDownloads{
+    font-size: 15px;
+    color: #e9e6f0;
+    border-radius: 20px;
+    width: 48%;
+    height: 70px;
+    background-color: #252526;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 26%;
+}
+
+.downButton{
+    width: 90%;
+    height: 90%;
+    background-color: #410da1;
+    color: #e9e6f0;
+    border: 2px solid #e9e6f0;
+    border-radius: 20px;
+    margin-top: 3px;
+    font-size: 20px;
+}
+
+.downButton:hover{
+    box-shadow: 0 5px 100px #410da1;
+}
+
+.newRelease{
+    font-size: 15px;
+    color: #e9e6f0;
+    border-radius: 20px;
+    width: 48%;
+    height: 70px;
+    background-color: #252526;
+    text-align: center;
+    margin-top: 120px;
+    margin-left: 26%;
+    margin-bottom: 200px;
+}
+
+.endImage{
+    width: 500px;
+    height: 500px;
+    margin-top: 100px;
+    margin-left: 38%;
+}
+
+.endText{
+    font-size: 20px;
+    margin-left: 48%;
+}
+
+.endBuffer{
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+}
+
+.endBufferBlock{
+    width: 100%;
+    height: 200px;
+    background: #410da1;
+    box-shadow: 0 0 10px 0 #252526;
+}
+
+ /* Navbar container */
+ .navbar {
+    overflow: hidden;
+    background-color: #410da1;
+    font-family: Arial;
+}
+  
+  /* Links inside the navbar */
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+  /* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+  
+  /* Dropdown button */
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+}
+  
+  /* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+  
+  /* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+  /* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+  /* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+  
+  /* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+} 
