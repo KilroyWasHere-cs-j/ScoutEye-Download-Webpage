@@ -155,11 +155,11 @@ h3 {
     text-align: center;
     background-color: #410da1;
     margin-left: 400px;
+    border-radius: 20px;
 }
 
 .downloadHeader{
     color: #fff;
-    text-align: center;
     padding: 2px;
     font-size: 40px;
     padding: 20px;
@@ -171,12 +171,38 @@ h3 {
     padding: 2px;
     font-size: 20px;
     padding: 20px;
+    margin-left: 300px;
 }
 
 .downloadButton{
     color: #fff;
-    text-align: center;
     padding: 2px;
     font-size: 20px;
     margin-bottom: 200px;
+    border-radius: 5px;
+}
+
+.banner{
+    width: 100%;
+    height: 200px;
+    background-color: #410da1;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.bannerHeader{
+    color: #fff;
+    padding: 2px;
+    font-size: 40px;
+    padding: 20px;
+    margin-left: 5%;
+}
+
+.bannerInfo{
+    color: #fff;
+    text-align: center;
+    padding: 2px;
+    font-size: 20px;
+    padding: 20px;
+    margin-left: 37%;
 }
