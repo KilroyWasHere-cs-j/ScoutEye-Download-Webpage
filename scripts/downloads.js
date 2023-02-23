@@ -10,7 +10,7 @@ function DesktopDownloadClicked() {
 function LinuxDownloadClicked(){
     const responce = confirm("Are you sure you want to download ScoutEye Linux at this time?")
     if(responce){
-        window.location.replace("https://github.com/frc5687/ScoutEye-universal/blob/main/Linux/Linux.zip?raw=true");
+        window.location.replace("");
     }
 }
 
@@ -18,7 +18,7 @@ function AndroidDownloadClicked(){
     const responce = confirm("Are you sure you want to download ScoutEye Android at this time?")
     if(responce){
         //https://github.com/frc5687/ScoutEye/blob/main/app-release.apk
-        window.location.replace("https://github.com/frc5687/ScoutEye/blob/main/app-release.apk");
+        window.location.replace("../app-release.apk");
     }
 }
 
