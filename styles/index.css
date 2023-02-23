@@ -7,111 +7,19 @@ html *
     background: #252526;
 }
 
-.introDiv{
-    font-size: 70px;
-    height: 100px;
-    width: 100%;
-    color: #e9e6f0;
-    background-color: #252526;
-    text-align: center;
-    margin-top: 50px;
-}
-
-.aboutDiv{
-    font-size: 20px;
-    height: 100px;
-    width: 100%;
-    color: #e9e6f0;
-    background-color: #252526;
-    text-align: center;
-    margin-top: 35px;
-}
-
-.headerBreakLine{
-    width: 100%;
-    color: #410da1;
-    margin-top: 150px;
-}
-
-.toDownloads{
-    font-size: 15px;
-    color: #e9e6f0;
-    border-radius: 20px;
-    width: 48%;
-    height: 70px;
-    background-color: #252526;
-    text-align: center;
-    margin-top: 50px;
-    margin-left: 26%;
-}
-
-.downButton{
-    width: 90%;
-    height: 90%;
-    background-color: #410da1;
-    color: #e9e6f0;
-    border: 2px solid #e9e6f0;
-    border-radius: 20px;
-    margin-top: 3px;
-    font-size: 20px;
-}
-
-.downButton:hover{
-    box-shadow: 0 5px 100px #410da1;
-}
-
-.newRelease{
-    font-size: 15px;
-    color: #e9e6f0;
-    border-radius: 20px;
-    width: 48%;
-    height: 70px;
-    background-color: #252526;
-    text-align: center;
-    margin-top: 120px;
-    margin-left: 26%;
-    margin-bottom: 200px;
-}
-
-.endImage{
-    width: 500px;
-    height: 500px;
-    margin-top: 100px;
-    margin-left: 38%;
-}
-
-.endText{
-    font-size: 20px;
-    margin-left: 48%;
-}
-
-.endBuffer{
-    width: 100%;
-    height: 200px;
-    margin-top: 20px;
-}
-
-.endBufferBlock{
-    width: 100%;
-    height: 200px;
-    background: #410da1;
-    box-shadow: 0 0 10px 0 #252526;
-}
-
  /* Navbar container */
  .navbar {
     overflow: hidden;
     background-color: #410da1;
-    font-family: Arial;
 }
   
   /* Links inside the navbar */
 .navbar a {
     float: left;
-    font-size: 16px;
+    font-size: 15px;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 19px 10px;
     text-decoration: none;
 }
   
@@ -123,18 +31,18 @@ html *
   
   /* Dropdown button */
 .dropdown .dropbtn {
-    font-size: 16px;
+    font-size: 18px;
     border: none;
     outline: none;
     color: white;
-    padding: 14px 16px;
+    padding: 14px 10px;
     background-color: inherit;
     font-family: inherit; /* Important for vertical align on mobile phones */
     margin: 0; /* Important for vertical align on mobile phones */
 }
   
   /* Add a red background color to navbar links on hover */
-.navbar a:hover, .dropdown:hover .dropbtn {
+.navbar a:hover, .dropdown:hover .dropbtn:hover {
     background-color: red;
 }
   
@@ -144,7 +52,7 @@ html *
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px #410da1;
     z-index: 1;
 }
   
@@ -167,3 +75,176 @@ html *
 .dropdown:hover .dropdown-content {
     display: block;
 } 
+
+
+.header{
+    color: #fff;
+    text-align: center;
+    padding: 100px;
+    font-size: 200px;
+}
+
+.missionStatement{
+    color: #fff;
+    text-align: center;
+    padding: 100px;
+    font-size: 50px;
+}
+
+/* https://codepen.io/DuskoStamenic/pen/ZEvBKdw */
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap";
+
+
+.parallax-container {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*  this is where the magic happens:  */
+    background-attachment: fixed;
+    background-image: url(https://www.pexels.com/photo/brown-binoculars-on-brown-textile-175744/);
+    background-position: center;
+    background-size: cover;
+    color: var(--color);
+    row-gap: 4rem;
+    text-align: center;
+}
+
+.buffer {
+    width: 100%;
+    min-height: 60vh;
+    background-color: var(--color);
+}
+
+.parallax-container2 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 6rem 0;
+    background-image: url(https://images.pexels.com/photos/175744/pexels-photo-175744.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    gap: 1.6em;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+p {
+    max-width: 52ch;
+    padding: 1em;
+    line-height: 1.5;
+}
+
+a {
+    display: inline-block;
+    padding: 1em 3.5em;
+    border-radius: 0.3em;
+    background-color: var(--color);
+    color: white;
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+h3 {
+    margin-top: 1em;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.card {
+    display: flex;
+    max-width: 320px;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1rem;
+    border-radius: 0.5em;
+    background-color: white;
+    box-shadow: 0 29px 38px -15px rgb(0 0 0 / 43%);
+}
+
+.card-img {
+    width: 100%;
+    height: 200px;
+    border-radius: 0.3em;
+    background-position: center;
+    background-size: cover;
+}
+
+.card:nth-of-type(1) .card-img {
+    background-image: url(https://images.pexels.com/photos/51415/pexels-photo-51415.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+
+.card:nth-of-type(2) .card-img {
+    background-image: url(https://images.pexels.com/photos/1092644/pexels-photo-1092644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+
+.card:nth-of-type(3) .card-img {
+    background-image: url(https://images.pexels.com/photos/1583884/pexels-photo-1583884.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+
+.card:nth-of-type(4) .card-img {
+    background-image: url(https://img.poki.com/cdn-cgi/image/quality=78,width=314,height=314,fit=cover,f=auto/9afd3b92ab41ffca7f368a8fcbd6d39a75894efe0edbc14cf1f067cf625e6678.png);
+}
+
+#overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background: #999;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    z-index: 100;
+}
+
+#popup {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #fff;
+    width: 500px;
+    height: 500px;
+    margin-left: -250px; /*Half the value of width to center div*/
+    margin-top: -250px; /*Half the value of height to center div*/
+    z-index: 200;
+    box-shadow: #410da1;
+}
+
+#popupclose {
+    float: right;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.popupcontent {
+    padding: 10px;
+}
+
+.popupcontentHeader{
+    font-size: 40px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.popupcontentBody{
+    font-size: 15px;
+    padding: 10px;
+    margin-left: 38%;
+}
+
+.minecraft{
+    width: 100%;
+    height: 50px;
+}
+
+.bedrock{
+    height: 50px;
+    padding-left: 0px;
+}
+

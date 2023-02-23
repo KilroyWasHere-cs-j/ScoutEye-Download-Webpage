@@ -6,6 +6,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8">
     <title>ScoutEye Downloads</title>
     <link rel="icon" href="http://scout-eye.com//favicon.ico">
@@ -14,6 +15,7 @@
     <div class="navbar">
         <a href="../index.html">Home</a>
         <a href="./devlog.html">Dev Log</a>
+        <a href="./downloads.html">Downloads</a>
         <div class="dropdown">
           <button class="dropbtn">More
             <i class="fa fa-caret-down"></i>
@@ -22,6 +24,7 @@
             <a href="./contact.html">Contact Us</a>
             <a href="https://www.theoutliers.org/">FRC 5687</a>
             <a href="./documentation.html">Documentation</a>
+            <a href="https://discord.gg/xeY9mHQyrH">Discord</a>
             <a href="./api.html">API</a>
           </div>
         </div>
@@ -31,33 +34,80 @@
 
 <body class="body">
 
-<div class="downloadsHeader">
-    <h1>Downloads</h1>
-    <p>Downloads for Desktop and Android</p>
-</div>
+  <script src="../scripts/downloads.js"></script> 
 
-<div class="downloadGuide">
-    <h1 class="headerText">Installation Instructions</h1>
-    <p>Download the latest version from the Downloads page.
-        Extract files contents, <br>and run ScoutEye.exe to start ScoutEye.</p>
-</div>
+  <div class="headerDiv">
+    <h1 class="header">Downloads</h1>
+  </div>
 
-<div class="scoutEyeDownloadLink" style="float: left;">
-    <h2>Desktop Suite</h2>
-    <p>A suite of software for FRC scouting on Windows desktop. Includes ScoutEye, ServerEye, APEye. Available on Windows 10+, and Dot Net 4.8+. See
-    documentation for specs.</p>
-    <button  onclick="DesktopDownloadClicked()" class=".downloadButton andButton">Download</button>
-</div>
+  <div class="downloadDiv">
+    <h1 class="downloadHeader">Windows</h1>
+    <p class="downloadInfo">The windows version of ScoutEye. Includes ScoutEye Tracker, ScoutEye configurer and ServerEye.
+      <br>
+      Requires DotNet 4.8 or higher.
+    </p>
+    <button class="downloadButton" onclick="DesktopDownloadClicked()">Download</button>
+  </div>
 
-<div class="scoutEyeDownloadLinkAndroid" style="margin-left: 50%;">
-    <h2>Android</h2>
-    <p>A version of ScoutEye brought over to work on Android. Available on Android 5+, API 22+. See documentation for specs.</p>
-    <button onclick="AndroidDownloadClicked()" class=".downloadButton andButton">Download</button>
-</div>
+  <div class="bufferDiv"></div>
 
-<div class="endBuffer"><div class="endBufferBlock"></div>
+  <div class="downloadDiv">
+    <h1 class="downloadHeader">Linux</h1>
+    <p class="downloadInfo">The Linux version of ScoutEye. Include ScoutEye Tracker.
+      <br>
+      Tested on Fedora 37 Workstation, other distros may work.
+    </p>
+    <button class="downloadButton" onclick="LinuxDownloadClicked()">Download</button>
+  </div>
 
-<script src="../scripts/downloads.js"></script> 
+  <div class="bufferDiv"></div>
+  
+  <div class="downloadDiv">
+    <h1 class="downloadHeader">Android</h1>
+    <p class="downloadInfo">The Android version of ScoutEye. Includes ScoutEye Tracker.
+      <br>
+      Requires Android 5.0 or higher. API 22 or higher.
+    </p>
+    <button class="downloadButton" onclick="AndroidDownloadClicked()">Download</button>
+  </div>
+  
+  <div class="bufferDiv"></div>
+
+  <div class="banner">
+    <h1 class="bannerHeader">Coming Soon</h1>
+  </div>
+
+  <div class="bufferDiv"></div>
+
+  <div class="downloadDiv">
+    <h1 class="downloadHeader">iOS</h1>
+    <p class="downloadInfo">The iOS version of ScoutEye. Includes ScoutEye Tracker.
+      <br>
+      Requires iOS 17 or higher.
+    </p>
+    <button class="downloadButton" onclick="iOSDownloadClicked()">Download</button>
+  </div>
+
+  <div class="bufferDiv"></div>
+
+  <div class="downloadDiv">
+    <h1 class="downloadHeader">MacOS</h1>
+    <p class="downloadInfo">The MacOS version of ScoutEye. Includes ScoutEye Tracker.
+    </p>
+    <button class="downloadButton" onclick="WebDownloadClicked()">Download</button>
+  </div>
+
+  <div class="bufferDiv"></div>
+
+  <div class="downloadDiv">
+    <h1 class="downloadHeader">Web</h1>
+    <p class="downloadInfo">The Web version of ScoutEye. Includes ScoutEye Tracker.
+    </p>
+    <button class="downloadButton" onclick="MacOSDownloadClicked()">Download</button>
+  </div>
+
+  <div class="bufferDiv"></div>
 
 </body>
+
 </html>

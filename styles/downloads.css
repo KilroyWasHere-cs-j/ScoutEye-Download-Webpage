@@ -7,118 +7,49 @@ html *
     background: #252526;
 }
 
-.scoutEyeDownloadLink{
-    border: 5px outset #410da1;
-    border-radius: 20px;
-    width: 48%;
-    height: 350px;
-    background-color: #595855;
-    text-align: center;
-    margin-top: 50px;
-    color: #e9e6f0;
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
 }
 
-.scoutEyeDownloadLinkAndroid{
-    border: 5px outset #410da1;
-    border-radius: 20px;
-    width: 48%;
-    height: 350px;
-    background-color: #595855;
-    text-align: center;
-    margin-top: 50px;
-    color: #e9e6f0;
+p {
+    max-width: 52ch;
+    padding: 1em;
+    line-height: 1.5;
 }
 
-.andButton{
-    width: 100px;
-    height: 25px;
-    background-color: #e9e6f0;
-    color: black;
-    border: 2px solid #f5c300;
-    border-radius: 20px;
-}
-
-.andButton:hover{
-    box-shadow: 0 5px 100px #410da1;
-}
-
-.downloadsHeader{
-    font-size: 20px;
-    width: 100%;
-    height: 100px;
-    background-color: #252526;
-    text-align: center;
-    margin-top: 35px;
-    color: #e9e6f0;
-}
-
-.header{
-    border: 1px solid #ccc;
-    border-width: 1px 0;
-    background-color: #410da1;
-    left: 0;
-    right: 0;
-    top: 2px;
-    height: 50px;
-    list-style:none;
-    margin:0;
-    padding:0;
-    text-align:center;
-    box-shadow: 0 0 25px 0 #252526;
-    box-shadow: 0 5px 50px #410da1;
-}
-
-.header li{
-    margin: 40px;
-    display:inline;
-}
-
-.header a{
-    font-size: 20px;
-    color: #e9e6f0;
-    display:inline-block;
+a {
+    display: inline-block;
+    padding: 1em 3.5em;
+    border-radius: 0.3em;
+    background-color: var(--color);
+    color: white;
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
     text-decoration: none;
-    padding:1px;
+    text-transform: uppercase;
 }
 
-.downloadGuide{
-    border: 5px outset #410da1;
-    border-radius: 20px;
-    width: 100%;
-    height: 160px;
-    background-color: #252526;
-    text-align: center;
-    margin-top: 20px;
-    color: #e9e6f0;
-}
-
-.endBuffer{
-    width: 100%;
-    height: 200px;
-    margin-top: 20px;
-}
-
-.endBufferBlock{
-    width: 100%;
-    height: 200px;
-    background: #410da1;
-    box-shadow: 0 0 10px 0 #252526;
+h3 {
+    margin-top: 1em;
+    font-size: 1.6rem;
+    font-weight: 700;
 }
 
  /* Navbar container */
  .navbar {
     overflow: hidden;
     background-color: #410da1;
-    font-family: Arial;
 }
   
   /* Links inside the navbar */
 .navbar a {
     float: left;
-    font-size: 16px;
+    font-size: 15px;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 19px 10px;
     text-decoration: none;
 }
   
@@ -130,18 +61,18 @@ html *
   
   /* Dropdown button */
 .dropdown .dropbtn {
-    font-size: 16px;
+    font-size: 18px;
     border: none;
     outline: none;
     color: white;
-    padding: 14px 16px;
+    padding: 14px 10px;
     background-color: inherit;
     font-family: inherit; /* Important for vertical align on mobile phones */
     margin: 0; /* Important for vertical align on mobile phones */
 }
   
   /* Add a red background color to navbar links on hover */
-.navbar a:hover, .dropdown:hover .dropbtn {
+.navbar a:hover, .dropdown:hover .dropbtn:hover {
     background-color: red;
 }
   
@@ -151,7 +82,7 @@ html *
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px #410da1;
     z-index: 1;
 }
   
@@ -174,3 +105,91 @@ html *
 .dropdown:hover .dropdown-content {
     display: block;
 } 
+
+@keyframes wSlide {
+    0% {
+        transform:translateX(-100%);
+    }
+    100% {
+        transform:translateX(-0%);
+    }
+}
+
+/* .slideUp {
+    animation: slideUp 6s;
+    animation-iteration-count: 1;
+    color: white;
+    font-family: Helvetica;
+    font-size: 50px;
+}
+
+@keyframes slideUp{
+    0% {
+        transform:translateX(100%);
+    }
+    100% {
+        transform:translateX(0%);
+    }
+} */
+
+.bufferDiv{
+    height: 20px;
+}
+
+.headerDiv{
+    width: 100%;
+    height: 1000px;
+    text-align: center;
+}
+
+.header{
+    color: #fff;
+    text-align: center;
+    padding: 2px;
+    font-size: 1000%;
+}
+
+.downloadDiv{
+    text-align: center;
+    width: 1000px;
+    background-color: #410da1;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    padding: 2px;
+}
+
+.downloadHeader{
+    color: #fff;
+    padding: 2px;
+    font-size: 40px;
+}
+
+.downloadInfo{
+    color: #fff;
+    text-align: center;
+    font-size: 200%;
+}
+
+.downloadButton{
+    color: #fff;
+    padding: 2px;
+    font-size: 200%;
+    margin-bottom: 200px;
+    border-radius: 5px;
+}
+
+.banner{
+    width: 100%;
+    height: 200px;
+    background-color: #410da1;
+    text-align: center;
+}
+
+.bannerHeader{
+    color: #fff;
+    padding: 20px;
+    font-size: 250%;
+    margin-left: auto;
+    margin-right: auto;
+}
