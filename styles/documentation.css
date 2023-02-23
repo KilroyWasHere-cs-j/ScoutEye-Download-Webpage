@@ -7,6 +7,36 @@ html *
     background: #252526;
 }
 
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+p {
+    max-width: 52ch;
+    padding: 1em;
+    line-height: 1.5;
+}
+
+a {
+    display: inline-block;
+    padding: 1em 3.5em;
+    border-radius: 0.3em;
+    background-color: var(--color);
+    color: white;
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+h3 {
+    margin-top: 1em;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
 .header{
     border: 1px solid #ccc;
     border-width: 1px 0;
@@ -127,13 +157,19 @@ html *
     font-family: Arial;
 }
   
+ /* Navbar container */
+ .navbar {
+    overflow: hidden;
+    background-color: #410da1;
+}
+  
   /* Links inside the navbar */
 .navbar a {
     float: left;
-    font-size: 16px;
+    font-size: 15px;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 19px 10px;
     text-decoration: none;
 }
   
@@ -145,18 +181,18 @@ html *
   
   /* Dropdown button */
 .dropdown .dropbtn {
-    font-size: 16px;
+    font-size: 18px;
     border: none;
     outline: none;
     color: white;
-    padding: 14px 16px;
+    padding: 14px 10px;
     background-color: inherit;
     font-family: inherit; /* Important for vertical align on mobile phones */
     margin: 0; /* Important for vertical align on mobile phones */
 }
   
   /* Add a red background color to navbar links on hover */
-.navbar a:hover, .dropdown:hover .dropbtn {
+.navbar a:hover, .dropdown:hover .dropbtn:hover {
     background-color: red;
 }
   
@@ -166,7 +202,7 @@ html *
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px #410da1;
     z-index: 1;
 }
   

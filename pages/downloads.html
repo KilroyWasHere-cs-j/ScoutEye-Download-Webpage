@@ -33,53 +33,22 @@
 
 <body class="body">
 
-<div class="downloadsHeader">
-    <h1>Downloads</h1>
-    <p>Downloads for Desktop and Android</p>
-</div>
+  <script src="../scripts/downloads.js"></script> 
 
-<div class="downloadGuide">
-    <h1 class="headerText">Installation Instructions</h1>
-    <p>Download the latest version from the Downloads page.
-        Extract files contents, <br>and run ScoutEye.exe to start ScoutEye.</p>
-</div>
+  <div class="headerDiv">
+    <h1 class="header">Downloads</h1>
+  </div>
 
-<div class="scoutEyeDownloadLink" style="float: left;">
-    <h2>Desktop Suite</h2>
-    <p>A suite of software for FRC scouting on Windows desktop. <br> Includes ScoutEye, ServerEye, APEye. Available on Windows 10+, and Dot Net 4.8+. <br> See
-    documentation for specs.</p>
-    <button  onclick="DesktopDownloadClicked()" class=".downloadButton andButton">Download</button>
-</div>
+  <div class="bufferDiv"></div>
 
-<div class="scoutEyeDownloadLinkAndroid" style="margin-left: 50%;">
-    <h2>Android</h2>
-    <p>A version of ScoutEye brought over to work on Android. <br>Available on Android 5+, API 22+. See documentation for specs.</p>
-    <a href="../app-release.apk" download="ScoutEye Android">
-      <button class=".downloadButton andButton" type="button">Download</button>
-    </a>
-</div>
+  <div class="downloadDiv">
+    <h1 class="downloadHeader">Windows</h1>
+    <p class="downloadInfo">The windows version of ScoutEye.</p>
+    <button class="downloadButton">Download</button>
+  </div>
 
-<div class="scoutEyeDownloadLinkLinux" style="float: left;">
-  <h2>Linux</h2>
-  <p>A version of ScoutEye ported to work with the linux operating system. <br>
-    Currently only know to work on Fedora Workstation 37, list will be expanded to work with <br> different distros.</p>
-  <a href="../Linux.zip" download="ScoutEye Linux">
-    <button class=".downloadButton andButton" type="button">Download</button>
-  </a>
-</div>
-
-<div class="scoutEyeDownloadLinkiOS" style="float: left;">
-  <h1>Coming soon ScoutEye iOS</h1>
-  <h2>IOS</h2>
-  <p>A version of ScoutEye ported to work with the IOS</p>
-  <a href="../IOS" download="ScoutEye IOS">
-    <button class=".downloadButton andButton" type="button">Download</button>
-  </a>
-</div>
-
-<div class="endBuffer"><div class="endBufferBlock"></div>
-
-<script src="../scripts/downloads.js"></script> 
+  <div class="bufferDiv"></div>
 
 </body>
+
 </html>
