@@ -126,6 +126,10 @@ h3 {
     margin-left: 20px;
 }
 
+.bufferDiv{
+  height: 20px;
+}
+
 .log{
     margin-top: 20px;
     margin-left: 10%;
