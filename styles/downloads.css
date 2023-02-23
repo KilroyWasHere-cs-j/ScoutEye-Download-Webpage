@@ -146,38 +146,35 @@ h3 {
     color: #fff;
     text-align: center;
     padding: 2px;
-    font-size: 200px;
+    font-size: 1000%;
 }
 
 .downloadDiv{
-    width: 1200px;
-    height: 400px;
     text-align: center;
+    width: 1000px;
     background-color: #410da1;
-    margin-left: 400px;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 20px;
+    padding: 2px;
 }
 
 .downloadHeader{
     color: #fff;
     padding: 2px;
     font-size: 40px;
-    padding: 20px;
 }
 
 .downloadInfo{
     color: #fff;
     text-align: center;
-    padding: 2px;
-    font-size: 20px;
-    padding: 20px;
-    margin-left: 300px;
+    font-size: 200%;
 }
 
 .downloadButton{
     color: #fff;
     padding: 2px;
-    font-size: 20px;
+    font-size: 200%;
     margin-bottom: 200px;
     border-radius: 5px;
 }
@@ -187,22 +184,12 @@ h3 {
     height: 200px;
     background-color: #410da1;
     text-align: center;
-    margin-top: 100px;
 }
 
 .bannerHeader{
     color: #fff;
-    padding: 2px;
-    font-size: 40px;
     padding: 20px;
-    margin-left: 5%;
-}
-
-.bannerInfo{
-    color: #fff;
-    text-align: center;
-    padding: 2px;
-    font-size: 20px;
-    padding: 20px;
-    margin-left: 37%;
+    font-size: 250%;
+    margin-left: auto;
+    margin-right: auto;
 }

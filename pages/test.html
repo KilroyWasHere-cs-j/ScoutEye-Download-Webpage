@@ -1,91 +1,77 @@
-<!-- Kilroy Was Here -->
-<!-- Gray #212121 -->
-<!-- Purple #410da1 -->
-<!-- White #e9e6f0 -->
-
-<!DOCTYPE html>
-<html lang="en" xmlns:width="http://www.w3.org/1999/xhtml">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>ScoutEye Download Webpage</title>
-    <link rel="icon" href="http://scout-eye.com//favicon.ico">
-    <link rel="stylesheet" href="../styles/test.css">
+  <title>A Simple Popup</title>
+  <style>
+	#overlay {
+		display: none;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		background: #999;
+		width: 100%;
+		height: 100%;
+		opacity: 0.8;
+		z-index: 100;
+	}
 
-    <nav class="header">
-        <ul>
-            <li>
-                <a href="./index.html"> Home </a>
-            </li>
-            <li>
-                <a href="https://www.theoutliers.org/">FRC 5687 </a>
-            </li>
-            <li>
-                <a href="./contact.html"> Contact Us </a>
-            </li>
-            <li>
-                <a href="./downloads.html">Downloads</a>
-            </li>
-            <li>
-                <a href="./documentation.html">Documentation</a>
-            </li>
-        </ul>
-    </nav>
+	#popup {
+		display: none;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		background: #fff;
+		width: 500px;
+		height: 500px;
+		margin-left: -250px; /*Half the value of width to center div*/
+		margin-top: -250px; /*Half the value of height to center div*/
+		z-index: 200;
+	}
+
+	#popupclose {
+		float: right;
+		padding: 10px;
+		cursor: pointer;
+	}
+
+	.popupcontent {
+		padding: 10px;
+	}
+
+	#button {
+		cursor: pointer;
+	}
+  </style>
 </head>
-
-<body class="body">
-
-    <section class="parallax-container">
-        <h1>ScoutEye</h1>
-        <p>
-            Mission Statement
-        </p>
-      </section>
-      
-      <section class="buffer"></section>
-      
-      <section class="parallax-container parallax-container2">
-        <div class="card">
-          <div class="card-img"></div>
-          <h3>Hiking</h3>
-          <p>
-            Explore the myriad of trails through the mountaineous. Choose the
-            difficulty appropriate to your fitness level.
-          </p>
-          <a href="#">Learn more</a>
-        </div>
-        <div class="card">
-          <div class="card-img"></div>
-          <h3>Rock climbing</h3>
-          <p>
-            The goal is to reach the summit of a formation or the endpoint of a
-            usually pre-defined route without falling
-          </p>
-          <a href="#">Learn more</a>
-        </div>
-        <div class="card">
-          <div class="card-img"></div>
-          <h3>Caving</h3>
-          <p>
-            Exploring underground through networks of tunnels and passageways,
-            which can be natural or artificial.
-          </p>
-          <a href="#">Learn more</a>
-        </div>
-        <div class="card">
-          <div class="card-img"></div>
-          <h3>Paragliding</h3>
-          <p>
-            Get lift off from the mountain and enjoy through the splendor of the
-            surrounding landscape by parachute.
-          </p>
-          <a href="#">Learn more</a>
-        </div>
-      </section>
-      
-      <section class="buffer"></section>
-      
-      
-
+<body>
+<div id="maincontent">
+    <h1>Page Content<h2>
+    <button id="button">Show Popup</button>
+</div>
+<div id="overlay"></div>
+<div id="popup">
+    <div class="popupcontrols">
+        <span id="popupclose">X</span>
+    </div>
+    <div class="popupcontent">
+        <h1>Some Popup Content</h1>
+    </div>
+</div>
+<script type="text/javascript">
+	// Initialize Variables
+	var closePopup = document.getElementById("popupclose");
+	var overlay = document.getElementById("overlay");
+	var popup = document.getElementById("popup");
+	var button = document.getElementById("button");
+	// Close Popup Event
+	closePopup.onclick = function() {
+	  overlay.style.display = 'none';
+	  popup.style.display = 'none';
+	};
+	// Show Overlay and Popup
+	button.onclick = function() {
+	  overlay.style.display = 'block';
+	  popup.style.display = 'block';
+	}
+</script>
 </body>
-
 </html>
