@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:width="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="UTF-8">
+        <title>ScoutEye 404</title>
+
+        <style>
+            .body{
+                background: #212121;
+            }
+
+        .text{
+            margin-top: 200px;
+            margin-left: 45%;
+        }
+
+        .errorText{
+            margin-top: 100px;
+            margin-left: 45%;
+        }
+
+        .bounce {
+            animation: bounce 6s;
+            animation-iteration-count: 1;
+            color: white;
+            font-family: Helvetica;
+            font-size: 100px;
+        }
+
+        @keyframes bounce {
+            0% {
+                transform:translateX(-100%);
+            }
+            100% {
+                transform:translateX(-0%);
+            }
+        }
+        
+        .slideUp {
+            animation: slideUp 6s;
+            animation-iteration-count: 1;
+            color: white;
+            font-family: Helvetica;
+            font-size: 50px;
+        }
+        
+        @keyframes slideUp{
+            0% {
+                transform:translateX(100%);
+            }
+            100% {
+                transform:translateX(0%);
+            }
+        }
+        </style>
+
+    </head>
+
+    <body class="body">
+
+        <div class="text">
+            <h2 class="bounce">400</h2>
+        </div>
+
+        <div class="errorText">
+            <p class="slideUp">Bad request <br> Maybe try asking again nicer?</p>
+        </div>
+
+    </body>
+
+</html>

@@ -1,0 +1,195 @@
+html *
+{
+   font-family: Helvetica !important;
+}
+
+.body{
+    background: #252526;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+p {
+    max-width: 52ch;
+    padding: 1em;
+    line-height: 1.5;
+}
+
+a {
+    display: inline-block;
+    padding: 1em 3.5em;
+    border-radius: 0.3em;
+    background-color: var(--color);
+    color: white;
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+h3 {
+    margin-top: 1em;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+ /* Navbar container */
+ .navbar {
+    overflow: hidden;
+    background-color: #410da1;
+}
+  
+  /* Links inside the navbar */
+.navbar a {
+    float: left;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    padding: 19px 10px;
+    text-decoration: none;
+}
+  
+  /* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+  
+  /* Dropdown button */
+.dropdown .dropbtn {
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 10px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+}
+  
+  /* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn:hover {
+    background-color: red;
+}
+  
+  /* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px #410da1;
+    z-index: 1;
+}
+  
+  /* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+  /* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+  
+  /* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+} 
+
+@keyframes wSlide {
+    0% {
+        transform:translateX(-100%);
+    }
+    100% {
+        transform:translateX(-0%);
+    }
+}
+
+/* .slideUp {
+    animation: slideUp 6s;
+    animation-iteration-count: 1;
+    color: white;
+    font-family: Helvetica;
+    font-size: 50px;
+}
+
+@keyframes slideUp{
+    0% {
+        transform:translateX(100%);
+    }
+    100% {
+        transform:translateX(0%);
+    }
+} */
+
+.bufferDiv{
+    height: 20px;
+}
+
+.headerDiv{
+    width: 100%;
+    height: 1000px;
+    text-align: center;
+}
+
+.header{
+    color: #fff;
+    text-align: center;
+    padding: 2px;
+    font-size: 1000%;
+}
+
+.downloadDiv{
+    text-align: center;
+    width: 1000px;
+    background-color: #410da1;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    padding: 2px;
+}
+
+.downloadHeader{
+    color: #fff;
+    padding: 2px;
+    font-size: 40px;
+}
+
+.downloadInfo{
+    color: #fff;
+    text-align: center;
+    font-size: 200%;
+}
+
+.downloadButton{
+    color: #fff;
+    padding: 2px;
+    font-size: 200%;
+    margin-bottom: 200px;
+    border-radius: 5px;
+}
+
+.banner{
+    width: 100%;
+    height: 200px;
+    background-color: #410da1;
+    text-align: center;
+}
+
+.bannerHeader{
+    color: #fff;
+    padding: 20px;
+    font-size: 250%;
+    margin-left: auto;
+    margin-right: auto;
+}
