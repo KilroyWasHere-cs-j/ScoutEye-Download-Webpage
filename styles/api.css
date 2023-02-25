@@ -6,7 +6,7 @@ html *
  /* Navbar container */
  .navbar {
   overflow: hidden;
-  background-color: #341763;
+  background-color: #410da1;
 }
 
 /* Links inside the navbar */
@@ -48,7 +48,7 @@ html *
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px #341763;
+  box-shadow: 0px 8px 16px 0px #410da1;
   z-index: 1;
 }
 
