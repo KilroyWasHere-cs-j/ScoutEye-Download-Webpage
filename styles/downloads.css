@@ -40,7 +40,7 @@ h3 {
  /* Navbar container */
  .navbar {
     overflow: hidden;
-    background-color: #410da1;
+    background-color: #341763;
 }
   
   /* Links inside the navbar */
@@ -82,7 +82,7 @@ h3 {
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px #410da1;
+    box-shadow: 0px 8px 16px 0px #341763;
     z-index: 1;
 }
   
@@ -152,7 +152,7 @@ h3 {
 .downloadDiv{
     text-align: center;
     width: 1000px;
-    background-color: #410da1;
+    background-color: #341763;
     margin-left: auto;
     margin-right: auto;
     border-radius: 20px;
@@ -182,7 +182,7 @@ h3 {
 .banner{
     width: 100%;
     height: 200px;
-    background-color: #410da1;
+    background-color: #341763;
     text-align: center;
 }
 

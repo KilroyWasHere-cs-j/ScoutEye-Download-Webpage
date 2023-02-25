@@ -47,7 +47,7 @@ h3 {
  /* Navbar container */
  .navbar {
   overflow: hidden;
-  background-color: #410da1;
+  background-color: #341763;
 }
 
 /* Links inside the navbar */
@@ -89,7 +89,7 @@ h3 {
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px #410da1;
+  box-shadow: 0px 8px 16px 0px #341763;
   z-index: 1;
 }
 
