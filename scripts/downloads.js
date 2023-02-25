@@ -10,7 +10,7 @@ function DesktopDownloadClicked() {
 function LinuxDownloadClicked(){
     const responce = confirm("Are you sure you want to download ScoutEye Linux at this time?")
     if(responce){
-        window.location.replace("");
+        window.location.replace("https://github.com/frc5687/ScoutEye/blob/main/Linux/Linux.zip?raw=true");
     }
 }
 
