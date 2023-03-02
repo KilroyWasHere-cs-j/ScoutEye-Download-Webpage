@@ -3,6 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>API</title>
+    <div class="navbar">
+        <a href="../index.html">Home</a>
+        <a href="./devlog.html">Dev log</a>
+        <a href="./downloads.html">Downloads</a>
+        <div class="dropdown">
+          <button class="dropbtn">More
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="./contact.html">Contact Us</a>
+            <a href="https://www.theoutliers.org/">FRC 5687</a>
+            <a href="./documentation.html">Documentation</a>
+            <a href="https://discord.gg/xeY9mHQyrH">Discord</a>
+            <a href="./api.html">API</a>
+          </div>
+        </div>
+      </div> 
+
 </head>
 <body>
 
@@ -14,41 +32,7 @@
 
 <input type="text" id="event_name" name="event_name">
 
-<script>
+<script src="../scripts/api.js"></script> 
 
-    let eventKey = ""
-
-    function getEventId(){
-        const Http = new XMLHttpRequest();
-        const url='https://www.thebluealliance.com/api/v3/team/frc5687/events/2023/simple';
-        const key="yj3WJMJc7W30bn24MLN92bW8oyCQ0VifWr7dCUA7oLPcWqrbPOCD6WFKRXhkC446";
-        Http.open("GET", url);
-        Http.setRequestHeader("X-TBA-Auth-Key",key);
-        Http.send();
-
-        Http.onreadystatechange = (e) => {
-            response = Http.responseText
-            const obj = JSON.parse(response)
-            eventKey = obj[0].key
-            document.getElementById("one").innerHTML = eventKey
-        }
-    }
-
-    function getMatchData(){
-        const Http = new XMLHttpRequest();
-        const url='https://www.thebluealliance.com/api/v3/team/frc5687/event/' + eventKey.toString() + '/status'
-        const key="yj3WJMJc7W30bn24MLN92bW8oyCQ0VifWr7dCUA7oLPcWqrbPOCD6WFKRXhkC446";
-        Http.open("GET", url);
-        Http.setRequestHeader("X-TBA-Auth-Key",key);
-        Http.send();
-
-        Http.onreadystatechange = (e) => {
-            response = Http.responseText
-            const obj = JSON.parse(response)
-            document.getElementById("two").innerHTML = obj[0]
-        }
-    }
-
-</script>
 </body>
 </html>
