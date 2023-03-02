@@ -4,8 +4,8 @@ A webpage to allow users to download the Desktop ScoutEye suite and the Android 
 - [X] Get webpage 
 - [X] Linlked button for installing Scouting app suite. Current installer link at this repo needs to find it's way into this web page: https://github.com/KilroyWasHere-cs-j/ScoutEyeInstallerLink
 - [X] APK installer link (APK needs to be done - Caleb that's a Gabe problem)
-- [X ] Parallax for documentation (scrolling)
-- [ ] Styling for web page
+- [X] Parallax for documentation (scrolling)
+- [X] Styling for web page
 
 
 # Branching
